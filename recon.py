@@ -439,7 +439,7 @@ def main():
     check_root()
 
     parser = argparse.ArgumentParser(
-        description=f"Recon v{VERSION} — Fast reconnaissance tool",
+        description=f"ReconNinja v{VERSION} — Fast reconnaissance tool",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="Examples:\n"
                "  sudo python3 recon.py 10.10.10.1\n"
@@ -465,7 +465,7 @@ def main():
     _config['no_hosts_update'] = args.no_hosts_update
 
     results['ip'] = args.target; results['start_time'] = datetime.now()
-    rprint(f"[bold cyan]RECON v{VERSION} | {args.target} | {datetime.now().strftime('%H:%M:%S')}[/bold cyan]")
+    rprint(f"[bold cyan]RECONNINJA v{VERSION} | {args.target} | {datetime.now().strftime('%H:%M:%S')}[/bold cyan]")
 
     check_dependencies()
 
